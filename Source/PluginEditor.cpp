@@ -52,3 +52,8 @@ void ParametriceqAudioProcessorEditor::resized()
 
 	highPassFrequencySlider.setBounds(PADDING, PADDING, getWidth() - 2*PADDING, SLIDER_HEIGHT);
 }
+
+void ParametriceqAudioProcessorEditor::sliderValueChanged(Slider* slider)
+{
+	processor.highPassFrequency = highPassFrequencySlider.getValue();
+}

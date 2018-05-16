@@ -56,7 +56,7 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 	//==============================================================================
-	float highPassFilterFrequency;
+	float highPassFrequency;
 
 private:
     //==============================================================================
