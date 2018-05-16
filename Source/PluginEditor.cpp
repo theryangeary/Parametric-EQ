@@ -41,7 +41,7 @@ void ParametriceqAudioProcessorEditor::paint (Graphics& g)
 
     g.setColour (Colours::white);
     g.setFont (15.0f);
-    g.drawFittedText ("Hello World!", getLocalBounds(), Justification::centred, 1);
+    g.drawFittedText ("Ryan's Parametric EQ", getLocalBounds(), Justification::centred, 1);
 }
 
 void ParametriceqAudioProcessorEditor::resized()
