@@ -22,7 +22,7 @@ ParametriceqAudioProcessorEditor::ParametriceqAudioProcessorEditor (Parametriceq
 	highPassFrequencySlider.setSliderStyle(Slider::LinearHorizontal);
 	highPassFrequencySlider.setRange(0.0, 20000.0, 0.1);
 	highPassFrequencySlider.setTextBoxStyle(Slider::TextBoxAbove, false, 90, 90);
-	highPassFrequencySlider.setPopupDisplayEnabled(true, true, this);
+	highPassFrequencySlider.setPopupDisplayEnabled(false, false, this);
 	highPassFrequencySlider.setTextValueSuffix(" Hz");
 	highPassFrequencySlider.setValue(0.0);
 
@@ -48,4 +48,6 @@ void ParametriceqAudioProcessorEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
+
+	highPassFrequencySlider.setBounds(15, 15, 170, 50);
 }
