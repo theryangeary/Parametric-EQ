@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="xiWeYf" name="Parametric-EQ" projectType="audioplug" jucerVersion="5.3.2">
+<JUCERPROJECT id="xiWeYf" name="Parametric-EQ" projectType="audioplug" jucerVersion="5.3.2"
+              pluginFormats="buildVST">
   <MAINGROUP id="UdCwyl" name="Parametric-EQ">
     <GROUP id="{C11B336E-A9EE-3008-23DD-D7B51E9C2F49}" name="Source">
       <FILE id="Q0m1Ov" name="PluginProcessor.cpp" compile="1" resource="0"
@@ -56,7 +57,7 @@
     <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
   </MODULES>
   <LIVE_SETTINGS>
-    <WINDOWS/>
+    <WINDOWS buildEnabled="1"/>
   </LIVE_SETTINGS>
   <JUCEOPTIONS/>
 </JUCERPROJECT>
