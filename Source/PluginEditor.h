@@ -19,7 +19,8 @@
 //==============================================================================
 /**
 */
-class ParametriceqAudioProcessorEditor  : public AudioProcessorEditor
+class ParametriceqAudioProcessorEditor  : public AudioProcessorEditor, 
+										private Slider::Listener
 {
 public:
     ParametriceqAudioProcessorEditor (ParametriceqAudioProcessor&);
