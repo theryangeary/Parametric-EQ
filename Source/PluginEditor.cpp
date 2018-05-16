@@ -27,6 +27,7 @@ ParametriceqAudioProcessorEditor::ParametriceqAudioProcessorEditor (Parametriceq
 	highPassFrequencySlider.setValue(0.0);
 
 	addAndMakeVisible(&highPassFrequencySlider);
+	highPassFrequencySlider.addListener(this);
 }
 
 ParametriceqAudioProcessorEditor::~ParametriceqAudioProcessorEditor()
