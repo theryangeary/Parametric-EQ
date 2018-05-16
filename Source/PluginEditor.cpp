@@ -49,5 +49,5 @@ void ParametriceqAudioProcessorEditor::resized()
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
 
-	highPassFrequencySlider.setBounds(15, 15, 170, 50);
+	highPassFrequencySlider.setBounds(PADDING, PADDING, getWidth() - 2*PADDING, SLIDER_HEIGHT);
 }
