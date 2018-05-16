@@ -13,6 +13,9 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "PluginProcessor.h"
 
+#define PADDING 15
+#define SLIDER_HEIGHT 30
+
 //==============================================================================
 /**
 */
