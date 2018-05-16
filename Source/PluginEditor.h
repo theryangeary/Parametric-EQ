@@ -31,5 +31,7 @@ private:
     // access the processor object that created it.
     ParametriceqAudioProcessor& processor;
 
+	Slider highPassFrequencySlider;
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ParametriceqAudioProcessorEditor)
 };

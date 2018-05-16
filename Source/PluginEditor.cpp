@@ -17,7 +17,16 @@ ParametriceqAudioProcessorEditor::ParametriceqAudioProcessorEditor (Parametriceq
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    setSize (200, 200);
+
+	highPassFrequencySlider.setSliderStyle(Slider::LinearHorizontal);
+	highPassFrequencySlider.setRange(0.0, 20000.0, 0.1);
+	highPassFrequencySlider.setTextBoxStyle(Slider::TextBoxAbove, false, 90, 90);
+	highPassFrequencySlider.setPopupDisplayEnabled(true, true, this);
+	highPassFrequencySlider.setTextValueSuffix(" Hz");
+	highPassFrequencySlider.setValue(0.0);
+
+	addAndMakeVisible(&highPassFrequencySlider);
 }
 
 ParametriceqAudioProcessorEditor::~ParametriceqAudioProcessorEditor()
